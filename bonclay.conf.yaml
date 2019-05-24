@@ -1,0 +1,21 @@
+# For a detailed description on the different options and how to configure them,
+# refer to the user guide: https://github.com/talal/bonclay/blob/master/doc/guide.md
+backup:
+  overwrite: false
+
+restore:
+  overwrite: false
+
+sync:
+  clean: true
+  overwrite: true
+
+spec:
+  # ~/examplefile: file
+  # ../../examplefile: ../file
+  # ~/example dir: dir
+  # ../example dir/some other dir: ../new dir
+  ~/.config/fish/config.fish: fish/config.fish
+  ~/.config/fish/fishfile: fish/fishfile
+  ~/.config/nvim/init.vim: nvim/init.vim
+  ~/.config/nvim/coc-settings.json: nvim/coc-settings.json
