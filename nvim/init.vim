@@ -20,11 +20,12 @@ Plug 'neoclide/coc.nvim', {'do': './install.sh nightly'}
 Plug 'OmniSharp/omnisharp-vim'
 Plug 'plasticboy/vim-markdown'
 Plug 'ryanoasis/vim-devicons'
+Plug 'arcticicestudio/nord-vim'
 call plug#end()
 
 syntax enable
 let g:onedark_hide_endofbuffer = 1
-colorscheme onedark
+colorscheme nord
 
 "split settings
 set splitbelow
