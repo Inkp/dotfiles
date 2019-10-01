@@ -2,4 +2,5 @@
 
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew bundle
+bonclay sync bonclay.conf.yaml
 curl -sSL https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py | python
