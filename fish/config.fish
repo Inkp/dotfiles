@@ -9,7 +9,8 @@ set PATH ~/.cargo/bin   $PATH
 set PATH ~/go/bin   $PATH
 set GOPATH ~/go
 
-#pyenv init - | source
+status --is-interactive; and pyenv init - | source
+status --is-interactive; and pyenv virtualenv-init - | source
 
 if not functions -q fisher
     set -q XDG_CONFIG_HOME; or set XDG_CONFIG_HOME ~/.config

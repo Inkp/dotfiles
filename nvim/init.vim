@@ -19,7 +19,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'neoclide/coc.nvim', {'do': './install.sh nightly'}
 Plug 'OmniSharp/omnisharp-vim'
 Plug 'plasticboy/vim-markdown'
-Plug 'ryanoasis/vim-devicons'
+"Plug 'ryanoasis/vim-devicons'
 Plug 'arcticicestudio/nord-vim'
 call plug#end()
 
