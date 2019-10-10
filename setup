@@ -1,6 +1,10 @@
-#!/usr/bin/bash
+#!/bin/bash
 
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew bundle
 bonclay sync bonclay.conf.yaml
 curl -sSL https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py | python
+echo "Setting up fish..."
+curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish
+echo /usr/local/bin/fish | sudo tee -a /etc/shells
+chsh -s /usr/local/bin/fish
