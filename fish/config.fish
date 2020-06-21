@@ -2,12 +2,16 @@ alias paket="mono .paket/paket.exe"
 alias fake="mono packages/FAKE/tools/Fake.exe"
 alias todo="topydo columns"
 alias todo-keys="open 'https://www.topydo.org/#ColumnShortcuts'"
+export AWS_DEFAULT_PROFILE=saml
+alias aws_auth="python3 ~/aws_cli_auth/main.py"
 
+set fish_color_valid_path #remove path underlining
 set PATH ~/.local/bin/  $PATH
 set PATH ~/.poetry/bin/ $PATH
 set PATH ~/.cargo/bin   $PATH
 set PATH ~/go/bin   $PATH
-set GOPATH ~/go
+set PATH ~/flutter/bin $PATH
+set -x GOPATH ~/go
 
 status --is-interactive; and pyenv init - | source
 status --is-interactive; and pyenv virtualenv-init - | source

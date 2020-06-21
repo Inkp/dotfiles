@@ -4,9 +4,12 @@ if empty(glob('~/.local/share/nvim/site/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
+let g:python_host_prog = '/Users/User/.pyenv/versions/neovim2/bin/python'
+let g:python3_host_prog = '/Users/User/.pyenv/versions/neovim3/bin/python'
+
 call plug#begin()
 Plug 'scrooloose/nerdtree'
-Plug 'wincent/command-t', {'do': 'cd ruby/command-t/ext/command-t && ruby extconf.rb && make'}
+"Plug 'wincent/command-t', {'do': 'cd ruby/command-t/ext/command-t && ruby extconf.rb && make'}
 Plug 'fatih/vim-go'
 Plug 'godoctor/godoctor.vim'
 Plug 'chaoren/vim-wordmotion'
@@ -21,6 +24,11 @@ Plug 'OmniSharp/omnisharp-vim'
 Plug 'plasticboy/vim-markdown'
 "Plug 'ryanoasis/vim-devicons'
 Plug 'arcticicestudio/nord-vim'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'fisadev/vim-ctrlp-cmdpalette'
+let g:ctrlp_cmdpalette_execute = 1
+"Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
+"Plug 'junegunn/fzf.vim'
 call plug#end()
 
 syntax enable
@@ -184,21 +192,6 @@ command! -nargs=0 Format :call CocAction('format')
 
 " Use `:Fold` to fold current buffer
 command! -nargs=? Fold :call     CocAction('fold', <f-args>)
-
-
-" Add diagnostic info for https://github.com/itchyny/lightline.vim
-let g:lightline = {
-      \ 'colorscheme': 'wombat',
-      \ 'active': {
-      \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'cocstatus', 'readonly', 'filename', 'modified' ] ]
-      \ },
-      \ 'component_function': {
-      \   'cocstatus': 'coc#status'
-      \ },
-      \ }
-
-
 
 " Using CocList
 " Show all diagnostics
