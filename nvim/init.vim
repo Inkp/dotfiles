@@ -18,8 +18,8 @@ Plug 'Shougo/echodoc.vim'
 Plug 'scrooloose/nerdcommenter'
 Plug 'jiangmiao/auto-pairs'
 Plug 'vim-airline/vim-airline'
-Plug 'tpope/vim-fugitive'
-Plug 'neoclide/coc.nvim', {'do': './install.sh nightly'}
+"Plug 'tpope/vim-fugitive'
+"Plug 'neoclide/coc.nvim', {'do': './install.sh nightly'}
 Plug 'OmniSharp/omnisharp-vim'
 Plug 'plasticboy/vim-markdown'
 "Plug 'ryanoasis/vim-devicons'
